@@ -41,6 +41,11 @@ const getBooks = function () {
           `
         row.appendChild(newCol)
 
+        const removeBook = function (button) {
+          const card = button.closest(".card");
+          card.remove();
+        };
+
     })
         })
     }
@@ -49,10 +54,7 @@ const getBooks = function () {
     getBooks()
 
 
-    const removeBook = function (button) {
-      const card = button.closest(".card");
-      card.remove();
-    };
+  
 
     
   
