@@ -49,12 +49,10 @@ const getBooks = function () {
     getBooks()
 
 
-    const deleteButton = document.getElementsByClassName('btn-primary')
-    console.log('deletebutton')
-    deleteButton.addEventListener('click', function () {
-    deletedCard = document.getElementsByClassName("card")
-    deletedCard.classList.add("card-none")
-})
+    const removeBook = function (button) {
+      const card = button.closest(".card");
+      card.remove();
+    };
 
     
   
